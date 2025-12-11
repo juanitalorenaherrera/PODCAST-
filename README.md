@@ -62,7 +62,7 @@ Aquí celebramos ese balance entre tradición y futuro: lo que nos trajo hasta a
 
 ¿Quieres aportar ideas o mejorar el sitio?
 ¡Adelante! Toda sugerencia es bienvenida.
-Manda un mensaje, abre un issue o simplemente cuéntanos tu historia con un café al lado.
+Manda un mensaje, o simplemente cuéntanos tu historia con un café al lado.
 
 🧡 Créditos
 
