@@ -1,0 +1,306 @@
+/* ===============================
+   🎧 ESTILO GENERAL – PODCAST
+================================= */
+
+:root {
+  --deep-green: #1f5f61;
+  --deep-blue: #1e6495;
+  --text-light: #e8f9ff;
+  --soft-white: #f5faff;
+  --glow: rgba(30, 150, 180, 0.5);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, var(--deep-green), #0e2a2b);
+  color: var(--text-light);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+/* ===============================
+   🔝 NAVBAR
+================================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(90deg, var(--deep-green), var(--deep-blue));
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--soft-white);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icono-logo {
+  width: 70px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--glow);
+}
+
+.navbar h1 {
+  font-size: 1.4rem;
+  color: var(--soft-white);
+  margin: 0;
+  animation: shineTitle 8s infinite linear;
+}
+
+@keyframes shineTitle {
+  0% { text-shadow: 0 0 10px var(--glow); }
+  50% { text-shadow: 0 0 20px var(--soft-white); }
+  100% { text-shadow: 0 0 10px var(--glow); }
+}
+
+.menu a {
+  color: var(--soft-white);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: var(--text-light);
+  text-shadow: 0 0 10px var(--soft-white);
+}
+
+
+/* ===============================
+   🎙️ EPISODIOS
+================================= */
+
+.episodios {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.episodios h2 {
+  font-size: 2rem;
+  color: var(--soft-white);
+  text-shadow: 0 0 15px var(--glow);
+  margin-top: 0;
+}
+
+.episodios .intro {
+    margin-bottom: 0;
+}
+
+.lista-episodios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card-episodio {
+  background: linear-gradient(180deg, var(--deep-blue), #113843);
+  border-radius: 15px;
+  padding: 22px;
+  color: var(--soft-white);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+.card-episodio.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-episodio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--glow);
+}
+
+.card-episodio h3 {
+  margin-bottom: 10px;
+  color: var(--text-light);
+  font-size: 1.2rem;
+}
+
+
+/* ===============================
+   👥 EQUIPO
+================================= */
+
+.seccion {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.seccion h2 {
+  font-size: 2rem;
+  color: var(--soft-white);
+  text-shadow: 0 0 15px var(--glow);
+  margin-top: 0;
+}
+
+.equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.miembro {
+  background: linear-gradient(180deg, #113843, var(--deep-green));
+  border-radius: 12px;
+  padding: 25px;
+  color: var(--soft-white);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+.miembro:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px var(--glow);
+}
+
+.miembro h3 {
+  margin-bottom: 10px;
+  color: var(--text-light);
+}
+
+
+/* ===============================
+   🌎 SOCIAL
+================================= */
+.social {
+  text-align: center;
+  padding: 20px 0;
+  margin: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social a {
+  color: var(--soft-white);
+  font-size: 2.2rem; /* Iconos más grandes */
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: var(--text-light);
+  text-shadow: 0 0 15px var(--glow);
+  transform: scale(1.1);
+}
+
+
+/* ===============================
+   📬 CONTACTO (ESTILOS UNIFICADOS Y ANIMADOS)
+================================= */
+
+/* Contenedor del formulario, layout y animación */
+.form-animado {
+  max-width: 500px;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+  /* Animación de entrada */
+  animation: aparecer 1.2s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Campos de texto (input, textarea) */
+.form-animado input,
+.form-animado textarea {
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--soft-white);
+  background: rgba(255, 255, 255, 0.1); 
+  color: var(--soft-white);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Efecto Focus (al hacer click) */
+.form-animado input:focus,
+.form-animado textarea:focus {
+  border-color: var(--text-light);
+  box-shadow: 0 0 12px var(--glow);
+  transform: scale(1.02);
+}
+
+/* Botón de envío */
+.btn-animado {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #7e2df9, #dc67ff); 
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-animado:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 5px 15px rgba(138, 54, 255, 0.6);
+}
+
+
+/* ===============================
+   🌫 VAPOR (CANVAS)
+================================= */
+
+#coffeeSteam {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.25;
+}
+
+
+/* ===============================
+   ⭐ TITULOS QUE BRILLAN
+================================= */
+
+h1, h2 {
+  animation: glowText 6s infinite linear;
+}
+
+@keyframes glowText {
+  0% { text-shadow: 0 0 10px var(--glow); }
+  50% { text-shadow: 0 0 25px var(--soft-white); }
+  100% { text-shadow: 0 0 10px var(--glow); }
+}
+
+
+/* ===============================
+   📱 RESPONSIVE
+================================= */
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+  .icono-logo {
+    width: 55px;
+  }
+  /* Ajuste de tamaño de iconos para móviles si es necesario */
+  .social a {
+    font-size: 1.8rem;
+  }
+}
