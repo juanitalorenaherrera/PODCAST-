@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Código y Café entre Amigos</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <canvas id="coffeeSteam"></canvas>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="Logo..jpg" alt="Logo Código y Café" class="icono-logo">
+      <h1>Código y Café entre Amigos</h1>
+    </div>
+    <nav class="menu">
+      <a href="#episodios">Episodios</a>
+      <a href="#equipo">El Equipo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="episodios" class="episodios">
+
+    <h2>
+      <i class="fas fa-headphones"></i>
+      Primeros Episodios
+      <i class="fas fa-mug-hot"></i>
+    </h2>
+
+    <p class="intro">Donde el código, el café y la amistad se mezclan con risas y caos creativo.</p>
+
+    <div class="lista-episodios">
+      <div class="card-episodio"><h3>☕ Linux vs Windows 💻</h3><p>Debate épico lleno de bugs, risas y café.</p></div>
+      <div class="card-episodio"><h3>🧠 Frontend vs Backend ⚔️</h3><p>Frameworks, APIs y cafés fríos; ¿quién gana?</p></div>
+      <div class="card-episodio"><h3>💡 Nuestra primera vez programando</h3><p>Esa primera línea que casi rompe todo.</p></div>
+      <div class="card-episodio"><h3>🎨 Diseño </h3><p>Color pastel, y otras paletas.</p></div>
+      <div class="card-episodio"><h3>🔥 Frameworks insomnio edition</h3><p>Angular, React, Vue… noches sin dormir.</p></div>
+      <div class="card-episodio"><h3>🌙 Del bug al café</h3><p>Deploys fallidos y tazas infinitas.</p></div>
+    </div>
+  </section>
+
+  <section id="equipo" class="seccion">
+    <h2>El Equipo</h2>
+
+    <div class="equipo">
+      <div class="miembro">
+        <h3>Ivan Castillo</h3>
+        <p>Apasionado por la tecnología y la conversación sin filtro...</p>
+      </div>
+
+      <div class="miembro">
+        <h3>Abdon Suarez
+        <p>Siempre con un café en mano, listo para debatir y bromear...</p>
+      </div>
+
+      <div class="miembro">
+        <h3>Jorge Morales</h3>
+        <p>El que busca equilibrio entre código, sistemas y buen humor...</p>
+      </div>
+
+      <div class="miembro">
+        <h3>Álvaro Pérez</h3>
+        <p>Entusiasta de la programación y de las charlas profundas...</p>
+      </div>
+
+      <div class="miembro">
+        <h3>Juanita Herrera</h3>
+        <p>Soñadora digital y amante del café...</p>
+      </div>
+
+      <div class="miembro">
+        <h3>Francisco Triviño</h3>
+        <p>Curioso de la innovación y con ojo crítico para el código...</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="social">
+    <a href="https://www.instagram.com/codigo_cafe5/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@codigoycafe_entreamigos5" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.twitch.tv/codigoycafeentreamigos" target="_blank"><i class="fab fa-twitch"></i></a>
+  </div>
+
+  <section id="contacto" class="seccion contacto">
+    <h2>Contacto</h2>
+    <p>¿Quieres escribirnos? Envíanos tus ideas:</p>
+
+    <form class="form-animado" action="mailto:codigo-y-cafe@proton.me" method="POST" enctype="text/plain">
+      <label for="nombre">Tu nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+      <label for="email">Tu correo:</label>
+      <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+
+      <label for="mensaje">Tu mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos tu idea..." required></textarea>
+
+      <button type="submit" class="btn-animado">Enviar</button>
+    </form>
+
+    <p><a href="mailto:codigo-y-cafe@proton.me">codigo-y-cafe@proton.me</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Código y Café entre Amigos • Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

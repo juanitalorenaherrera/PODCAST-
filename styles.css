@@ -1,0 +1,328 @@
+/* ===============================
+   🎧 ESTILO GENERAL – PODCAST
+================================= */
+
+:root {
+  /* 🎨 PALETA PODCAST TECH */
+  --bg-main: #0F172A;        /* azul noche */
+  --bg-card: #111827;        /* azul gris oscuro */
+  --bg-card-soft: #1F2937;   /* contraste suave */
+
+  --text-main: #E5E7EB;      /* gris claro */
+  --text-soft: #CBD5E1;      /* gris secundario */
+
+  --accent-main: #38BDF8;    /* azul eléctrico */
+  --accent-ok: #22C55E;      /* verde menta */
+
+  --glow: rgba(56, 189, 248, 0.45);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(180deg, var(--bg-main), #020617);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+/* ===============================
+   ⭐ TIPOGRAFÍA TITULOS
+================================= */
+
+h1, h2, h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0.6px;
+}
+
+
+/* ===============================
+   🔝 NAVBAR
+================================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(90deg, #020617, var(--bg-card));
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icono-logo {
+  width: 70px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 12px var(--glow);
+}
+
+.navbar h1 {
+  font-size: 1.4rem;
+  color: var(--text-main);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  animation: shineTitle 8s infinite linear;
+}
+
+@keyframes shineTitle {
+  0% { text-shadow: 0 0 10px var(--glow); }
+  50% { text-shadow: 0 0 25px var(--accent-main); }
+  100% { text-shadow: 0 0 10px var(--glow); }
+}
+
+.menu a {
+  color: var(--text-soft);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: var(--accent-main);
+  text-shadow: 0 0 12px var(--glow);
+}
+
+
+/* ===============================
+   🎙️ EPISODIOS
+================================= */
+
+.episodios {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.episodios h2 {
+  font-size: 2rem;
+  color: var(--text-main);
+  text-shadow: 0 0 15px var(--glow);
+  margin-top: 0;
+}
+
+.episodios .intro {
+  color: var(--text-soft);
+  margin-bottom: 0;
+}
+
+.lista-episodios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card-episodio {
+  background: linear-gradient(180deg, var(--bg-card), var(--bg-card-soft));
+  border-radius: 15px;
+  padding: 22px;
+  color: var(--text-main);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transition: 0.3s ease;
+}
+
+.card-episodio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--glow);
+}
+
+.card-episodio h3 {
+  margin-bottom: 10px;
+  color: var(--accent-main);
+  font-size: 1.2rem;
+}
+
+
+/* ===============================
+   👥 EQUIPO
+================================= */
+
+.seccion {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.seccion h2 {
+  font-size: 2rem;
+  color: var(--text-main);
+  text-shadow: 0 0 15px var(--glow);
+  margin-top: 0;
+}
+
+.equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.miembro {
+  background: linear-gradient(180deg, var(--bg-card-soft), var(--bg-card));
+  border-radius: 12px;
+  padding: 25px;
+  color: var(--text-soft);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.miembro:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 25px var(--glow);
+}
+
+.miembro h3 {
+  margin-bottom: 10px;
+  color: var(--accent-main);
+}
+
+
+/* ===============================
+   🌎 SOCIAL
+================================= */
+
+.social {
+  text-align: center;
+  padding: 20px 0;
+  margin: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.social a {
+  color: var(--text-soft);
+  font-size: 2.2rem;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: var(--accent-main);
+  text-shadow: 0 0 15px var(--glow);
+  transform: scale(1.1);
+}
+
+
+/* ===============================
+   📬 CONTACTO
+================================= */
+
+.form-animado {
+  max-width: 500px;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: aparecer 1.2s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-animado input,
+.form-animado textarea {
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(15, 23, 42, 0.6);
+  color: var(--text-main);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-animado input:focus,
+.form-animado textarea:focus {
+  border-color: var(--accent-main);
+  box-shadow: 0 0 15px var(--glow);
+  transform: scale(1.02);
+}
+
+.btn-animado {
+  padding: 12px;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  background: linear-gradient(135deg, var(--accent-main), var(--accent-ok));
+  color: #020617;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-animado:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 10px 25px var(--glow);
+}
+
+
+/* ===============================
+   🌫 VAPOR (CANVAS)
+================================= */
+
+#coffeeSteam {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.18;
+}
+
+
+/* ===============================
+   ⭐ TITULOS QUE BRILLAN
+================================= */
+
+h1, h2 {
+  animation: glowText 6s infinite linear;
+}
+
+@keyframes glowText {
+  0% { text-shadow: 0 0 10px var(--glow); }
+  50% { text-shadow: 0 0 30px var(--accent-main); }
+  100% { text-shadow: 0 0 10px var(--glow); }
+}
+
+
+/* ===============================
+   📱 RESPONSIVE
+================================= */
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .icono-logo {
+    width: 55px;
+  }
+
+  .social a {
+    font-size: 1.8rem;
+  }
+}
+a {
+  color: var(--accent-main);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-ok);
+  text-shadow: 0 0 10px var(--glow);
+}
