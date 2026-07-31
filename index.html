@@ -1,50 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Código y Café entre Amigos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código y Café entre Amigos</title>
 
-  <link rel="stylesheet" href="styles.css" />
-
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <canvas id="coffeeSteam"></canvas>
+    <!-- ================= NAVBAR ================= -->
 
-  <header class="navbar">
-    <div class="logo">
-      <img src="LOGO..png" alt="Logo Código y Café" class="icono-logo">
-      <h1>Código y Café entre Amigos</h1>
-    </div>
-    <nav class="menu">
-      <a href="#episodios">Episodios</a>
-      <a href="#equipo">El Equipo</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+    <header class="navbar">
 
-  <section id="episodios" class="episodios">
+        <div class="logo">
+            <img src="LOGO..png" alt="Logo Código y Café" class="icono-logo">
+            <h1>Código y Café entre Amigos</h1>
+        </div>
 
-    <h2>
-      <span aria-hidden="true">🎧</span>
-      Primeros Episodios
-      <span aria-hidden="true">☕</span>
-    </h2>
+        <nav class="menu">
+            <a href="#temas">Temas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
 
-    <p class="intro">Donde el código, el café y la amistad se mezclan con risas y caos creativo.</p>
+    </header>
 
-    <div class="lista-episodios">
-      <div class="card-episodio"><h3>☕ Linux vs Windows 💻</h3><p>Debate épico lleno de bugs, risas y café.</p></div>
-      <div class="card-episodio"><h3>🧠 Frontend vs Backend ⚔️</h3><p>Frameworks, APIs y cafés fríos; ¿quién gana?</p></div>
-      <div class="card-episodio"><h3>💡 Nuestra primera vez programando</h3><p>Esa primera línea que casi rompe todo.</p></div>
-      <div class="card-episodio"><h3>🎨 Diseño </h3><p>Color pastel, y otras paletas.</p></div>
-      <div class="card-episodio"><h3>🔥 Frameworks insomnio edition</h3><p>Angular, React, Vue… noches sin dormir.</p></div>
-      <div class="card-episodio"><h3>🌙 Del bug al café</h3><p>Deploys fallidos y tazas infinitas.</p></div>
-    </div>
-  </section>
+    <!-- ================= HERO ================= -->
 
-  <section id="equipo" class="seccion">
+    <section id="hero" class="hero">
+
+        <div class="hero-content">
+
+            <h2>☕ Código y Café entre Amigos</h2>
+
+            <h3>Charlas reales sobre tecnología y desarrollo.</h3>
+
+            <p>
+                Somos un grupo de amigos apasionados por la programación,
+                el diseño y la innovación. Muy pronto comenzaremos este
+                podcast donde compartiremos experiencias, debates,
+                aprendizajes y anécdotas sobre el mundo de la tecnología.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#equipo" class="btn-principal">
+                    👥 Conoce al equipo
+                </a>
+
+                <a href="#contacto" class="btn-secundario">
+                    💬 Contáctanos
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TEMAS ================= -->
+
+    <section id="temas" class="episodios">
+
+        <h2>🚀 Próximos Temas</h2>
+
+        <p class="intro">
+            Estos serán algunos de los temas que exploraremos en nuestros
+            primeros episodios.
+        </p>
+
+        <div class="lista-episodios">
+
+            <div class="card-episodio">
+                <h3>🐧 Linux vs Windows</h3>
+                <p>Ventajas, desventajas y cuál elegir según tus necesidades.</p>
+            </div>
+
+            <div class="card-episodio">
+                <h3>⚔️ Frontend vs Backend</h3>
+                <p>¿Cuál camino elegir para comenzar en desarrollo?</p>
+            </div>
+
+            <div class="card-episodio">
+                <h3>🎨 Diseño UI/UX</h3>
+                <p>La importancia del diseño en las aplicaciones modernas.</p>
+            </div>
+
+            <div class="card-episodio">
+                <h3>🤖 Inteligencia Artificial</h3>
+                <p>Cómo está cambiando la forma en que programamos.</p>
+            </div>
+
+            <div class="card-episodio">
+                <h3>☁️ Cloud Computing</h3>
+                <p>Servicios en la nube y herramientas imprescindibles.</p>
+            </div>
+
+            <div class="card-episodio">
+                <h3>💼 Primer empleo en tecnología</h3>
+                <p>Experiencias, consejos y errores que aprendimos en el camino.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= EQUIPO ================= -->
+
+   <section id="equipo" class="seccion">
     <h2>El Equipo</h2>
 
 <div class="equipo">
@@ -97,32 +160,98 @@
     </p>
   </div>
 
-</div>
-  <section id="contacto" class="seccion contacto">
-    <h2>Contacto</h2>
-    <p>¿Quieres escribirnos? Envíanos tus ideas:</p>
+        </div>
 
-    <form class="form-animado" action="mailto:codigo-y-cafe@proton.me" method="POST" enctype="text/plain">
-      <label for="nombre">Tu nombre:</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+    </section>
 
-      <label for="email">Tu correo:</label>
-      <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+    <!-- ================= SOBRE ================= -->
 
-      <label for="mensaje">Tu mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos tu idea..." required></textarea>
+    <section id="sobre" class="sobre">
 
-      <button type="submit" class="btn-animado">Enviar</button>
-    </form>
+        <h2>¿Por qué Código y Café?</h2>
 
-    <p><a href="mailto:codigo-y-cafe@proton.me">codigo-y-cafe@proton.me</a></p>
-  </section>
+        <p>
+            Creemos que las mejores conversaciones sobre tecnología nacen
+            entre amigos y con una buena taza de café. Este podcast busca
+            acercar el mundo del desarrollo de software de una forma sencilla,
+            entretenida y cercana para quienes están empezando y para quienes
+            ya forman parte de la comunidad tecnológica.
+        </p>
 
-  <footer>
-    <p>© 2025 Código y Café entre Amigos • Todos los derechos reservados</p>
-  </footer>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- ================= CONTACTO ================= -->
+
+    <section id="contacto" class="seccion contacto">
+
+        <h2>Contacto</h2>
+
+        <p>
+            ¿Tienes alguna idea para un episodio o quieres colaborar con
+            nosotros? Escríbenos.
+        </p>
+
+        <form class="form-animado"
+              action="mailto:codigo-y-cafe@proton.me"
+              method="POST"
+              enctype="text/plain">
+
+            <label for="nombre">Nombre</label>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre"
+                required>
+
+            <label for="email">Correo electrónico</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Tu correo"
+                required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                placeholder="Escribe tu mensaje..."
+                required></textarea>
+
+            <button type="submit" class="btn-animado">
+                Enviar mensaje
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+    <div class="redes">
+
+        <a href="https://www.twitch.tv/codigoycafeentreamigos" target="_blank">
+            🎮 Twitch
+        </a>
+
+        <a href="mailto:codigo-y-cafe@proton.me">
+            📧 Correo
+        </a>
+
+    </div>
+
+    <p>
+        © 2026 Código y Café entre Amigos · Todos los derechos reservados.
+    </p>
+
+</footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
